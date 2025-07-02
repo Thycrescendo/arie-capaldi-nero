@@ -1,17 +1,12 @@
-Here is your detailed `README.md` formatted in Markdown, ready for use in your repository:
-
----
-
-```markdown
 # Arie-Capaldi-Nero: Visual Blockchain Automation Platform
 
 ## Overview
 
-**Arie-Capaldi-Nero** is a TypeScript-based, React-driven visual blockchain automation platform built for the **NERO Chain** ecosystem. It delivers a drag-and-drop, no-code experience using `@xyflow/react-flow`, empowering users to build crypto automation workflows for DeFi, GameFi, and SocialFi. Designed for **Wavehack/Buildathon**, it leverages NERO's **Blockspace 2.0** and **Paymaster (AA-Platform)** to enable **gasless transactions** and **custom fee logic**.
+**Arie-Capaldi-Nero** is a dApp visual blockchain automation platform built for the **NERO Chain** ecosystem. It delivers a drag-and-drop, no-code experience using `@xyflow/react-flow`, empowering users to build crypto automation workflows for DeFi, GameFi, and SocialFi. Designed for **Wavehack/Buildathon**, it leverages NERO's **Blockspace 2.0** and **Paymaster (AA-Platform)** to enable **gasless transactions** and **custom fee logic**.
 
 ---
 
-## 🔧 Functional Specifications
+## Functional Specifications
 
 - **Workflow Engine**: Constructs directed acyclic graphs (DAGs) composed of triggers, actions, logic, and notifications.
 - **DeFi Automation**: Simulates real-time price tracking, trade execution, and portfolio balancing.
@@ -20,9 +15,9 @@ Here is your detailed `README.md` formatted in Markdown, ready for use in your r
 
 ---
 
-## 🧱 Architecture
+## Architecture
 
-### ⚙️ Software Stack
+### Software Stack
 
 **Frontend:**
 - React `^18.2.0`
@@ -39,24 +34,8 @@ Here is your detailed `README.md` formatted in Markdown, ready for use in your r
 - Paymaster account abstraction (AA)
 - Future: `ethers.js` integration
 
-### 📁 Directory Structure
 
-```
-
-src/
-├── types/              # Interfaces: Block, NodeData
-├── components/
-│   ├── LandingPage.tsx
-│   ├── WorkflowBuilder.tsx
-│   ├── BlockLibrary.tsx
-│   ├── NodeConfigPanel.tsx
-├── App.tsx             # Tab navigation root
-├── index.tsx           # App entry point
-├── index.css           # Tailwind styles
-
-````
-
-### 🧩 Data Model
+### Data Model
 
 ```ts
 // src/types/index.ts
@@ -67,11 +46,11 @@ export interface Block {
   description: string;
   config: { [key: string]: string | number | boolean };
 }
-````
+```
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -82,7 +61,7 @@ export interface Block {
 ### Installation
 
 ```bash
-git clone https://github.com/your-username/arie-capaldi-nero.git
+git clone https://github.com/thycrescendo/arie-capaldi-nero.git
 cd arie-capaldi-nero
 
 npm install @xyflow/react-flow @types/xyflow__react-flow \
@@ -266,7 +245,7 @@ await setPaymentType(aaBuilder, '0'); // Sponsored
 
 ```bash
 # Fork and clone
-git clone https://github.com/your-username/arie-capaldi-nero.git
+git clone https://github.com/thycrescendo/arie-capaldi-nero.git
 
 # Branch
 git checkout -b feature/new-module
